@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-// import { NavComponent } from './modules/general/nav/nav.component';
 import { HomeComponent } from './modules/general/home/home.component';
 import { NotFoundComponent } from './modules/general/not-found/not-found.component';
 // Lazy load
@@ -27,7 +26,6 @@ import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
-    // NavComponent,
     HomeComponent,
     NotFoundComponent,
     // MailingComponent,
