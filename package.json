@@ -9,6 +9,20 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drupix/angular-dev.git"
+  },
+  "author": {
+    "name": "drupix",
+    "email": "enzo@drupal-solutions.ch",
+    "url": "https://angular.drupal-solutions.ch"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drupix/angular-dev/issues"
+  },
+  "homepage": "https://github.com/drupix/angular-dev#readme",
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.1.3",
@@ -19,6 +33,9 @@
     "@angular/platform-browser": "~10.1.3",
     "@angular/platform-browser-dynamic": "~10.1.3",
     "@angular/router": "~10.1.3",
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
@@ -27,9 +44,9 @@
     "@angular-devkit/build-angular": "~0.1001.3",
     "@angular/cli": "~10.1.3",
     "@angular/compiler-cli": "~10.1.3",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.12.66",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
