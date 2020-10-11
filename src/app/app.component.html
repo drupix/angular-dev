@@ -2,47 +2,49 @@
   <!-- <app-nav></app-nav> -->
 
   <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: #212121;">
-    <a class="navbar-brand" routerLink="/">
-      <img src="assets/params/images/logo.png" width="60" alt="">
-      <span class="app-title mr-1">AngularDev</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/">
-          <i class="fas fa-home mr-1"></i>Home
-          </a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/about">
-          <i class="far fa-question-circle mr-1"></i>About
-          </a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/contact">
-          <i class="fas fa-envelope mr-1"></i>Contact
-          </a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/signin">
-          <i class="fas fa-user mr-1"></i>Sign in
-          </a>
-        </li>
-        <li class="nav-item active">
-          <a target="_blank" class="nav-link" href="https://github.com/drupix">
-          <i class="fab fa-github mr-1"></i>Github
-          </a>
-        </li>
-      </ul>
+    <div class="container container-fluid-XXX">
+      <a class="navbar-brand" routerLink="/">
+        <img src="assets/params/images/logo.png" width="60" alt="">
+        <span class="app-title mr-1">AngularDev</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/">
+            <i class="fas fa-home mr-1"></i>Home
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/about">
+            <i class="far fa-question-circle mr-1"></i>About
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/contact">
+            <i class="fas fa-envelope mr-1"></i>Contact
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/signin">
+            <i class="fas fa-user mr-1"></i>Sign in
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a target="_blank" class="nav-link" href="https://github.com/drupix">
+            <i class="fab fa-github mr-1"></i>Github
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </header>
 
 <main>
-  <div class="container-fluid">
+  <div class="container container-fluid-XXX">
     <router-outlet></router-outlet>
   </div>
 </main>
