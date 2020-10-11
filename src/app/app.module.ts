@@ -36,7 +36,7 @@ import { AppRoutingModule } from './app-routing.module';
     // SignupComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     // MailingModule,
     // MapModule,
