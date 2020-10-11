@@ -19,6 +19,18 @@ export class HomeComponent implements OnInit {
   constructor() {
     this.features = [
       {
+        name: 'Bootstrap prototype',
+        description: 'Bootstrap Prototype Description',
+        icon: 'fab fa-bootstrap',
+        link: 'bootstrap-prototype'
+      },
+      {
+        name: 'Reactiveform',
+        description: 'Create Reactive Form',
+        icon: 'fa-comment-alt',
+        link: 'reactiveform'
+      },
+      {
         name: 'Components',
         description: 'Define and control views',
         icon: 'fa-share-alt-square',
@@ -31,47 +43,51 @@ export class HomeComponent implements OnInit {
         link: 'services'
       },
       {
-        name: 'HttpClient',
-        description: 'HttpClient',
-        icon: 'fa-comment-alt',
-        link: 'httpclient'
-      },
-      {
-        name: 'Directives',
-        description: 'Change the appearance or behavior of a DOM element',
-        icon: 'fa-text-width',
-        link: 'directives'
-      },
-      {
-        name: 'Pipes',
-        description: 'Write display-value transformations',
-        icon: 'fa-code',
-        link: 'pipes'
-      },
-      {
-        name: 'RxJS/Observables',
-        description: 'Provide support for passing messages between publishers and subscribers',
-        icon: 'fa-comment-alt',
-        link: 'observables'
-      },
-      {
-        name: 'modal',
-        description: 'Add dialogs to your site',
-        icon: 'fa-comment-alt',
-        link: 'modal'
-      },
-      {
-        name: 'Reactiveform',
-        description: 'Create Reactive Form',
-        icon: 'fa-comment-alt',
-        link: 'reactiveform'
-      },
-      {
         name: 'Template Driven Form',
         description: 'Create Template Driven Form',
         icon: 'fa-comment-alt',
         link: 'templatedriven'
       },
+      // Replaced by Items
+      // {
+      //   name: 'HttpClient',
+      //   description: 'HttpClient',
+      //   icon: 'fa-comment-alt',
+      //   link: 'httpclient'
+      // },
+
+      // Items replaces HttpClient
+      {
+        name: 'Items (aka HttpClient)',
+        description: 'Items',
+        icon: 'fab fa-bootstrap',
+        link: 'httpclient'
+      },
+
+      // {
+      //   name: 'Directives',
+      //   description: 'Change the appearance or behavior of a DOM element',
+      //   icon: 'fa-text-width',
+      //   link: 'directives'
+      // },
+      // {
+      //   name: 'Pipes',
+      //   description: 'Write display-value transformations',
+      //   icon: 'fa-code',
+      //   link: 'pipes'
+      // },
+      // {
+      //   name: 'RxJS/Observables',
+      //   description: 'Provide support for passing messages between publishers and subscribers',
+      //   icon: 'fa-comment-alt',
+      //   link: 'observables'
+      // },
+      // {
+      //   name: 'modal',
+      //   description: 'Add dialogs to your site',
+      //   icon: 'fa-comment-alt',
+      //   link: 'modal'
+      // },
     ];
   }
 

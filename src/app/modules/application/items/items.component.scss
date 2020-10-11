@@ -1,0 +1,9 @@
+.httpclient-table {
+    border-radius: 10px;
+    table {
+        color: #FFFFFF;
+    }
+    &.blue-gradient {
+        background: linear-gradient(40deg, #45cafc, #5664bd) !important
+    }
+}
