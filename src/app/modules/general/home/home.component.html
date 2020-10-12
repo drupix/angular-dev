@@ -29,7 +29,7 @@
 </div>
 
 <hr>
-
+<!--
 <div class="row mb-1">
     <div class="col-md-12 text-center">
     <h3 class="h6">Static Features&nbsp;&nbsp;<i class="fas fa-list"></i></h3>
@@ -129,6 +129,7 @@
         </div>
     </div>
 </div>
+-->
 
 <div class="row mb-1">
     <div class="col-md-12 text-center">
@@ -137,7 +138,7 @@
 </div>
 
 <div class="row pt-2">
-  <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-2"
+  <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mb-2"
        *ngFor="let feature of features">
     <div class="card bg-light mb-3">
       <a routerLink="/{{ feature.link }}">
@@ -147,7 +148,7 @@
               <h5 class="card-title">{{ feature.name }}</h5>
             </div>
             <div class="col-2 col-xl-2">
-              <i class="fas {{ feature.icon }} fa-lg text-primary"></i>
+              <i class="{{ feature.icon }} fa-lg text-primary"></i>
             </div>
           </div>
         </div>

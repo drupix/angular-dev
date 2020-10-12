@@ -12,16 +12,7 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 const routes: Routes = [
   { path: '', component: HomeComponent, },
   // { path: 'contact', component: ContactComponent },
-  {
-    path: 'bootstrap-prototype',
-    loadChildren: () => import('./modules/application/example-bootstrap-prototype/example-bootstrap-prototype.module')
-      .then(mod => mod.ExampleBootstrapPrototypeModule)
-  },
-  {
-    path: 'components',
-    loadChildren: () => import('./modules/application/components/components.module')
-      .then(mod => mod.ComponentsModule)
-  },
+
   // Lazy load
   {
     path: 'contact',
@@ -43,6 +34,21 @@ const routes: Routes = [
   },
   // { path: 'signup', component: SignupComponent },
 
+  {
+    path: 'bootstrap-prototype',
+    loadChildren: () => import('./modules/application/example-bootstrap-prototype/example-bootstrap-prototype.module')
+      .then(mod => mod.ExampleBootstrapPrototypeModule)
+  },
+  {
+    path: 'components',
+    loadChildren: () => import('./modules/application/components/components.module')
+      .then(mod => mod.ComponentsModule)
+  },
+  {
+    path: 'services',
+    loadChildren: () => import('./modules/application/services/services.module')
+      .then(mod => mod.ServicesModule)
+  },
   {
     path: 'httpclient',
     loadChildren: () => import('./modules/application/items/items.module')

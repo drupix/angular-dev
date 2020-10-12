@@ -26,26 +26,26 @@ export class HomeComponent implements OnInit {
       },
       {
         name: 'Reactiveform',
-        description: 'Create Reactive Form',
-        icon: 'fa-comment-alt',
+        description: 'TODO: Create Reactive Form',
+        icon: 'fas fa-comment-alt',
         link: 'reactiveform'
       },
       {
         name: 'Components',
         description: 'Define and control views',
-        icon: 'fa-share-alt-square',
+        icon: 'fas fa-share-alt-square',
         link: 'components'
       },
       {
         name: 'Services',
         description: 'A great way to share information among classes',
-        icon: 'fa-address-card',
+        icon: 'fas fa-address-card',
         link: 'services'
       },
       {
         name: 'Template Driven Form',
-        description: 'Create Template Driven Form',
-        icon: 'fa-comment-alt',
+        description: 'TODO: Create Template Driven Form',
+        icon: 'fas fa-comment-alt',
         link: 'templatedriven'
       },
       // Replaced by Items
@@ -58,8 +58,8 @@ export class HomeComponent implements OnInit {
 
       // Items replaces HttpClient
       {
-        name: 'Items (aka HttpClient)',
-        description: 'Items',
+        name: 'HttpClient',
+        description: 'Use an external API with the HttpClient module',
         icon: 'fab fa-bootstrap',
         link: 'httpclient'
       },

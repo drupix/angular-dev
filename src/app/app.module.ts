@@ -14,11 +14,13 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 // import { ItemsModule } from './modules/application/items/items.module';
 // import { ComponentsComponent } from './modules/application/components/components.component';
 // import { ComponentsModule } from './modules/application/components/components.module';
-
+// import { ServicesComponent } from './modules/application/services/services.component';
+// import { ServicesModule } from './modules/application/services/services.module';
 //
 // END Lazy load
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+
 
 // import { MailingModule } from './modules/general/contact/mailing/mailing.module';
 // import { MailingComponent } from './modules/general/contact/mailing/mailing.component';
@@ -44,6 +46,7 @@ import { HttpClientModule } from '@angular/common/http';
     // SignupComponent,
     // ItemsComponent,
     // ComponentsComponent,
+    // ServicesComponent,
   ],
   imports: [
     // Transfer State
@@ -59,6 +62,7 @@ import { HttpClientModule } from '@angular/common/http';
     // ItemsModule,
     HttpClientModule,
     // ComponentsModule
+    // ServicesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
