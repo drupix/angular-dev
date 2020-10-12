@@ -11,13 +11,13 @@ import { existsSync } from 'fs';
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
+  const distFolder = join(process.cwd(), 'dist/angular-dev/browser');
 
   // See: https://medium.com/@bossprogrammer/how-to-deploy-an-angular-10-universal-app-with-server-side-rendering-to-azure-a2b90df9ca64
-  // const distFolder = join(process.cwd(), 'dist/angular-dev/browser');
-  let distFolder = join(process.cwd(), 'browser');
-  if (!existsSync(distFolder)) {
-    distFolder = join(process.cwd(), 'dist/angular-dev/browser');
-  }
+  // let distFolder = join(process.cwd(), 'browser');
+  // if (!existsSync(distFolder)) {
+  //   distFolder = join(process.cwd(), 'dist/angular-dev/browser');
+  // }
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)

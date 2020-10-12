@@ -41,8 +41,9 @@ import { HttpClientModule } from '@angular/common/http';
     // ItemsComponent,
   ],
   imports: [
-    // BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    BrowserModule.withServerTransition({ appId: 'angular-dev' }),
+    // Transfer State
+    // BrowserModule.withServerTransition({ appId: 'angular-dev' }),
+    BrowserModule,
     AppRoutingModule,
     HttpClientModule
     // MailingModule,

@@ -3,6 +3,9 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ItemsComponent } from './items.component';
 import { HttpClientModule } from '@angular/common/http';
 
+// Transfert State
+import { BrowserTransferStateModule } from '@angular/platform-browser';
+
 describe('ItemsComponent', () => {
   let component: ItemsComponent;
   let fixture: ComponentFixture<ItemsComponent>;
@@ -10,7 +13,8 @@ describe('ItemsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        HttpClientModule
+        HttpClientModule,
+        BrowserTransferStateModule
       ],
       declarations: [ ItemsComponent ]
     })

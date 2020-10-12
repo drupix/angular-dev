@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'AngularDev';
+  title = 'angular-dev';
   // title = 'angular-dev app is running!';
   version = 'Angular version 10.1.6';
 }
