@@ -17,7 +17,11 @@ const routes: Routes = [
     loadChildren: () => import('./modules/application/example-bootstrap-prototype/example-bootstrap-prototype.module')
       .then(mod => mod.ExampleBootstrapPrototypeModule)
   },
-
+  {
+    path: 'components',
+    loadChildren: () => import('./modules/application/components/components.module')
+      .then(mod => mod.ComponentsModule)
+  },
   // Lazy load
   {
     path: 'contact',

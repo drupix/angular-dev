@@ -12,6 +12,9 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 // import { SignupComponent } from './modules/general/auth/signup/signup.component';
 // import { ItemsComponent } from './modules/application/items/items.component';
 // import { ItemsModule } from './modules/application/items/items.module';
+// import { ComponentsComponent } from './modules/application/components/components.component';
+// import { ComponentsModule } from './modules/application/components/components.module';
+
 //
 // END Lazy load
 import { AppRoutingModule } from './app-routing.module';
@@ -27,6 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
 // import { SigninModule } from './modules/general/auth/signin/signin.module';
 // import { SignupModule } from './modules/general/auth/signup/signup.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,20 +43,22 @@ import { HttpClientModule } from '@angular/common/http';
     // SigninComponent
     // SignupComponent,
     // ItemsComponent,
+    // ComponentsComponent,
   ],
   imports: [
     // Transfer State
     // BrowserModule.withServerTransition({ appId: 'angular-dev' }),
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
     // MailingModule,
     // MapModule,
     // ContactModule,
     // AboutModule,
     // SigninModule,
     // SigupModule,
-    // ItemsModule
+    // ItemsModule,
+    HttpClientModule,
+    // ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
