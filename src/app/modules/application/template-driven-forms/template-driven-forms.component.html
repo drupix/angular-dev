@@ -1,0 +1,53 @@
+<div class="row justify-content-center pt-2">
+  <div class="text-center col">
+    <h1 class="h3">Feature : Template-driven Forms</h1>
+    <hr>
+  </div>
+</div>
+<div class="row justify-content-center p-2">
+
+  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+    {{ movie | json }}
+  </div>
+
+  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+    <div class="card">
+      <div class="card-header text-center">
+        <h4>Movie : <span class="text-primary font-weight-bold">Avengers: Endgame</span></h4>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" value="Avengers: Endgame">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="releaseDate">Release Date</label>
+              <input type="text" class="form-control" id="releaseDate" value="April 24, 2019">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="domestic">Domestic</label>
+              <input type="text" class="form-control" id="domestic" placeholder="" value="$858,373,000">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="international">International</label>
+              <input type="text" class="form-control" id="international" placeholder="" value="$1,939,427,564">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="worldwide">Worldwide</label>
+              <input type="text" class="form-control" id="worldwide" placeholder="" value="$2,797,800,564">
+            </div>
+          </div>
+          <div class="form-row justify-content-center">
+            <button type="submit" class="btn btn-primary mr-4">Create</button>
+            <button type="submit" class="btn btn-primary mr-4">Update</button>
+            <button type="submit" class="btn btn-primary">Delete</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -54,6 +54,11 @@ const routes: Routes = [
     loadChildren: () => import('./modules/application/items/items.module')
       .then(mod => mod.ItemsModule)
   },
+  {
+    path: 'template-driven-forms',
+    loadChildren: () => import('./modules/application/template-driven-forms/template-driven-forms.module')
+      .then(mod => mod.TemplateDrivenFormsModule)
+  },
 
   { path: '**', component: NotFoundComponent }
 ];

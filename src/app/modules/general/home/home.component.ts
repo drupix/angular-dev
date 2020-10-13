@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
     this.features = [
       {
         name: 'Bootstrap prototype',
-        description: 'Bootstrap Prototype Description',
+        description: 'Bootstrap Prototype , Badges, Buttons, Collapse, Popovers, Toasts, Tooltips',
         icon: 'fab fa-bootstrap',
         link: 'bootstrap-prototype'
       },
@@ -32,21 +32,21 @@ export class HomeComponent implements OnInit {
       },
       {
         name: 'Components',
-        description: 'Define and control views',
+        description: 'Define and control views - Smartphone Component with Input, Output and Event Emitter',
         icon: 'fas fa-share-alt-square',
         link: 'components'
       },
       {
         name: 'Services',
-        description: 'A great way to share information among classes',
+        description: 'A great way to share information among classes - Use services to view a playlist and a youtube player',
         icon: 'fas fa-address-card',
         link: 'services'
       },
       {
         name: 'Template Driven Form',
-        description: 'TODO: Create Template Driven Form',
+        description: 'Create Template Driven Form - Forms are the mainstay of business applications',
         icon: 'fas fa-comment-alt',
-        link: 'templatedriven'
+        link: 'template-driven-forms'
       },
       // Replaced by Items
       // {

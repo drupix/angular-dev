@@ -16,11 +16,12 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 // import { ComponentsModule } from './modules/application/components/components.module';
 // import { ServicesComponent } from './modules/application/services/services.component';
 // import { ServicesModule } from './modules/application/services/services.module';
+// import { TemplateDrivenFormsComponent } from './modules/application/template-driven-forms/template-driven-forms.component';
+// import { TemplateDrivenFormsModule } from './modules/application/template-driven-forms/template-driven-forms.module';
 //
 // END Lazy load
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-
 
 // import { MailingModule } from './modules/general/contact/mailing/mailing.module';
 // import { MailingComponent } from './modules/general/contact/mailing/mailing.component';
@@ -47,6 +48,7 @@ import { HttpClientModule } from '@angular/common/http';
     // ItemsComponent,
     // ComponentsComponent,
     // ServicesComponent,
+    // TemplateDrivenFormsComponent,
   ],
   imports: [
     // Transfer State
@@ -63,6 +65,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     // ComponentsModule
     // ServicesModule,
+    // TemplateDrivenFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
