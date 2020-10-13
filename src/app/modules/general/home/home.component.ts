@@ -33,19 +33,19 @@ export class HomeComponent implements OnInit {
       {
         name: 'Components',
         description: 'Define and control views - Smartphone Component with Input, Output and Event Emitter',
-        icon: 'fas fa-share-alt-square',
+        icon: 'fas fa-tools',
         link: 'components'
       },
       {
         name: 'Services',
         description: 'A great way to share information among classes - Use services to view a playlist and a youtube player',
-        icon: 'fas fa-address-card',
+        icon: 'fab fa-youtube',
         link: 'services'
       },
       {
         name: 'Template Driven Form',
         description: 'Create Template Driven Form - Forms are the mainstay of business applications',
-        icon: 'fas fa-comment-alt',
+        icon: 'fab fa-wpforms',
         link: 'template-driven-forms'
       },
       // Replaced by Items
@@ -60,8 +60,15 @@ export class HomeComponent implements OnInit {
       {
         name: 'HttpClient',
         description: 'Use an external API with the HttpClient module',
-        icon: 'fab fa-bootstrap',
+        icon: 'fas fa-project-diagram',
         link: 'httpclient'
+      },
+
+      {
+        name: 'Chart.js',
+        description: 'Simple yet flexible JavaScript charting for designers & developers',
+        icon: 'fas fa-chart-bar',
+        link: 'chartjs'
       },
 
       // {

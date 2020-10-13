@@ -18,6 +18,8 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 // import { ServicesModule } from './modules/application/services/services.module';
 // import { TemplateDrivenFormsComponent } from './modules/application/template-driven-forms/template-driven-forms.component';
 // import { TemplateDrivenFormsModule } from './modules/application/template-driven-forms/template-driven-forms.module';
+// import { ChartjsComponent } from './modules/application/chartjs/chartjs.component';
+// import { ChartjsModule } from './modules/application/chartjs/chartjs.module';
 //
 // END Lazy load
 import { AppRoutingModule } from './app-routing.module';
@@ -49,6 +51,7 @@ import { HttpClientModule } from '@angular/common/http';
     // ComponentsComponent,
     // ServicesComponent,
     // TemplateDrivenFormsComponent,
+    // ChartjsComponent,
   ],
   imports: [
     // Transfer State
@@ -66,6 +69,7 @@ import { HttpClientModule } from '@angular/common/http';
     // ComponentsModule
     // ServicesModule,
     // TemplateDrivenFormsModule,
+    // ChartjsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
