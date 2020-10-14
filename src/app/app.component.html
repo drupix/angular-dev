@@ -1,10 +1,9 @@
 <header>
   <!-- <app-nav></app-nav> -->
-
   <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: #212121;">
-    <div class="container container-fluid-XXX">
+    <div class="container">
       <a class="navbar-brand" routerLink="/">
-        <img src="assets/params/images/logo.png" width="60" alt="">
+        <img class="logo" src="assets/params/images/logo.png" width="60" alt="">
         <span class="title mr-1">AngularDev</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,27 +13,27 @@
         <ul class="navbar-nav mx-auto">
           <li class="nav-item active">
             <a class="nav-link" routerLink="/">
-            <i class="fas fa-home mr-1"></i>Home
+              <i class="fas fa-home mr-1"></i>Home
             </a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" routerLink="/about">
-            <i class="far fa-question-circle mr-1"></i>About
+              <i class="far fa-question-circle mr-1"></i>About
             </a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" routerLink="/contact">
-            <i class="fas fa-envelope mr-1"></i>Contact
+              <i class="fas fa-envelope mr-1"></i>Contact
             </a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" routerLink="/signin">
-            <i class="fas fa-user mr-1"></i>Sign in
+              <i class="fas fa-user mr-1"></i>Sign in
             </a>
           </li>
           <li class="nav-item active">
             <a target="_blank" rel="noreferrer" class="nav-link" href="https://github.com/drupix">
-            <i class="fab fa-github mr-1"></i>Github
+              <i class="fab fa-github mr-1"></i>Github
             </a>
           </li>
         </ul>
@@ -43,20 +42,21 @@
   </nav>
 </header>
 
-<main>
-  <div class="container container-fluid-XXX">
+<main role="main" class="flex-shrink-0">
+  <div class="container">
     <router-outlet></router-outlet>
   </div>
 </main>
 
-<div class="footer">
+<footer class="footer mt-auto py-3">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <p class="text-center text-white">&copy; 2020 - <a target="_blank" rel="noreferrer" href="http://drupal-solutions.ch">drupal-solutions.ch</a><br/>
-        With a big help of <a target="_blank" rel="noreferrer" href="http://ganatan.com">ganatan.com</a></p>
+        <p class="text-center text-white">&copy; 2020 - <a target="_blank" rel="noreferrer" href="http://drupal-solutions.ch">drupal-solutions.ch</a>
+          <br/>
+          With a big help from <a target="_blank" rel="noreferrer" href="http://ganatan.com">ganatan.com</a>
+        </p>
       </div>
     </div>
   </div>
-</div>
-
+</footer>

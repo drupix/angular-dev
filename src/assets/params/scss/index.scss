@@ -1,19 +1,30 @@
+// Default variables.
+@import "default-variables";
+
+// Custom overrides.
+// @import 'mixins';
+@import "typography";
+
 body {
   padding-top: 6rem;
   // color: black;
-  font-weight: 400;
+  // font-weight: 400;
 }
 .navbar {
   -webkit-box-shadow: 0 8px 6px -6px #999;
   -moz-box-shadow: 0 8px 6px -6px #999;
   box-shadow: 0 8px 6px -6px #999;
+
+  .logo {
+    margin-right: 10px;
+  }
 }
-.app main,
-.app footer {
-  padding-left: 1rem;
-}
+// .app main,
+// .app footer {
+//   padding-left: 1rem;
+// }
 a {
-  color: #0072ec;
+  color: $primary-color;
 }
 .footer {
   background: #3F729B;
@@ -22,6 +33,45 @@ a {
     color: #ffffff;
   }
 }
+
+.ds-info {
+  //.info {
+    p {
+      max-width: 254px;
+      text-align: center;
+    }
+  //}
+  .portrait {
+	  margin-bottom: 16px;
+	  max-width: 254px;
+	  min-height: 246px;
+    text-align: center;
+    span.about-info {
+      -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+              border-radius: 50%;
+      display: block;
+      max-height: 246px;
+      height: 100%;
+      margin: 0 0 16px 0;
+      overflow: hidden;
+      max-width: 246px;
+      width: 100%;
+
+      -webkit-box-shadow: 0px 0px 5px 0px $primary-color;
+        -moz-box-shadow: 0px 0px 5px 0px $primary-color;
+              box-shadow: 0px 0px 5px 0px $primary-color;
+
+      position: absolute;
+
+      &.hidden {
+        display: none;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
 .card {
 	display: block;
 	background-color: rgba(255, 255, 255, .8);
@@ -34,6 +84,3 @@ a {
 .card:hover {
 	box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
 }
-
-// Custom sub-theme overrides.
-// @import 'mixins';

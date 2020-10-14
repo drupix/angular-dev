@@ -1,0 +1,29 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+
+// Set the proper directory for the Bootstrap Glyphicon font.
+// $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
+
+// $gray-color: #888;
+// $light-gray-color: #f3f3f3;
+// $dark-gray-color: #3e3e3e;
+// $light-gray-bg-color: #f3f3f3;
+// $unpublished-bg: #fff4f4;
+
+// Core colors
+$primary-color: #0072ec !default;
+$primary-color-dark: darken($primary-color, 8%) !default;
+$primary-color-light: lighten($primary-color, 5%) !default;
+$secondary-color: lighten($primary-color, 37.5%) !default;
+$secondary-color-dark: darken($secondary-color, 3%) !default;
+$secondary-color-light: lighten($secondary-color, 3%) !default;
+

@@ -1,0 +1,214 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <!--
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    -->
+    <title>angular-dev - Sticky Footer Navbar Template · Bootstrap</title>
+
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/">-->
+
+    <!-- Fontawesome -->
+    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/params/css/sticky-footer-navbar.css" rel="stylesheet">
+
+    <link href="assets/params/css/index.css" rel="stylesheet">
+    <link href="assets/params/css/home.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <!--
+    <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#563d7c">
+    -->
+
+    <!--
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    -->
+    <!-- Custom styles for this template -->
+    <!-- <link href="sticky-footer-navbar.css" rel="stylesheet"> -->
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: #212121;">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <span class="mr-1">drupal-solution</span>
+            <img src="assets/params/images/logo.png" width="60" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-home mr-1"></i><span style="color:white">home</span>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  <i class="far fa-question-circle mr-1"></i>About
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-envelope mr-1"></i>Contact
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-user mr-1"></i>Sign in
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a target="_blank" rel="noreferrer" class="nav-link" href="https://github.com/drupix">
+                  <i class="fab fa-github mr-1"></i>Github
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0">
+      <div class="container">
+        <!--
+        <h1 class="mt-5">Sticky footer with fixed navbar</h1>
+        <p class="lead">Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>main &gt; .container</code>.</p>
+        <p>Back to <a href="/docs/4.5/examples/sticky-footer/">the default sticky footer</a> minus the navbar.</p>
+        -->
+        <div class="row pt-1 mb-2">
+          <div class="col-md-3 text-center mb-2">
+            <h1 class="h5">
+              <i class="fas fa-laptop fa-lg mr-2 text-primary"></i>
+              angular-dev
+              <i class="fas fa-mobile-alt fa-lg ml-2 mr-1 text-primary"></i>
+              <i class="fas fa-tablet-alt fa-lg ml-2 mr-1 text-primary"></i>
+            </h1>
+          </div>
+          <div class="col-md-3 text-center text-danger">
+            <h2 class="h5">
+              Angular 10.1.1<i class="fab fa-angular fa-lg ml-2 mr-1 text-danger"></i>
+            </h2>
+          </div>
+          <div class="col-md-3 text-center text-primary">
+            <h2 class="h5">
+              Bootstrap 4.5.2<i class="fab fa-bootstrap fa-lg ml-2 mr-1 text-primary"></i>
+            </h2>
+          </div>
+          <div class="col-md-3 text-center text-success">
+            <h2 class="h5">
+              Font Awesome 5.14.0<i class="fab fa-font-awesome-flag fa-lg ml-2 mr-1 text-success"></i>
+            </h2>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row mb-1">
+          <div class="col-md-12 text-center">
+            <h3 class="h6">Features&nbsp;&nbsp;<i class="fas fa-list"></i></h3>
+          </div>
+        </div>
+
+        <div class="row pt-2">
+          <div class="col-md-4 ds-info">
+            <div class="portrait">
+              <span class="about-info photo-2" style="display: none;"><img class="img-fluid" alt="" src="./assets/params/images/about-02.jpg"></span>
+              <span class="about-info photo-1" style=""><img class="img-fluid" alt="" src="./assets/params/images/about-01.jpg"></span>
+            </div>
+            <p class="name"><strong>Enzo Di Resta</strong><br>Analyste-programmeur indépendant</p>
+            <p><i class="fas fa-phone"></i>&nbsp;&nbsp;079 665 51 34</p>
+            <p><i class="fas fa-envelope"></i>&nbsp;&nbsp;<a title="Me contacter" href="mailto:info@drupal-solutions.ch">info [at] drupal-solutions.ch</a></p>
+          </div>
+          <div class="col-md-8">
+              <h3>L'homme à tout faire (enfin presque)</h3>
+              <p>
+                  <span class="dropcap">B</span>onjour!
+                  Je m'appelle Enzo Di Resta et je suis développeur (fullstack !?!?) drupal freelance diplômé de l'école supérieure
+                  d'informatique de gestion de Genève (<a href="http://edu.ge.ch/esig/" target="_blank" rel="noreferrer">ESIG<sup>GE</sup></a>).
+                  Avant d'être dans l'informatique, j'ai travaillé 6 ans comme employé de commerce dans la comptabilité,
+                  les assurances maladies, la gestion de stock et la planification.
+              </p>
+              <p>
+                  A la fin de mes études à l'ESIG<sup>GE</sup> en 1998, j'ai été engagé par Cross-Systems où j'ai passé plus
+                  de 2 ans comme développeur (Delphi, Visual Basic et VBA) spécialement dans le domaine bancaire et financier.
+                  Un petit détour de 2 ans dans la restauration m'a dirigé vers la formation d'adultes pendant 2 autres années
+                  avant de me faire rappeler à l'ordre par Cross-Systems fin 2006 où je suis resté plus de 5 ans. Là, j'ai pu
+                  élargir mes connaissances dans les domaine du contrôle aérien, de l'hôtellerie et de la domotique.
+              </p>
+              <p>
+                  Depuis 2007, je me suis spécialisé dans le développement de site web notamment avec
+                  <a href="http://www.adobe.com/fr/products/coldfusion-family.html" target="_blank" rel="noreferrer">Coldfusion</a>
+                  et <a href="http://wordpress.org/" target="_blank" rel="noreferrer">Wordpress</a>. A cette période, j'ai fait la
+                  découverte de Linux (<a href="http://www.ubuntu.com/" target="_blank" rel="noreferrer">Ubuntu</a> et
+                  <a href="http://www.kde.org/" target="_blank" rel="noreferrer">KDE</a>) ainsi que du CMS
+                  <a href="http://drupal.org/" target="_blank" rel="noreferrer">Drupal</a>
+                  dont je suis devenu un grand fan. Il est depuis lors mon outils favoris pour la création de site.
+              </p>
+              <p>
+                  <a href="./" target="_blank">AngularDev</a> est un projet d'autoformation dédié à l'apprentissage
+                  d'Angular 10, les PWA (Progressiv Web Application) et de Drupal Decoupled.
+              </p>
+              <p>
+                  Un grand <strong>MERCI</strong> à Danny (<a href="http://ganatan.com" target="_blank" rel="noreferrer">ganatan.com</a>) pour ses tutoriels
+                  qui m'ont permis de développer ce site.
+              </p>
+          </div>
+
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="text-center text-white">&copy; 2020 - drupal-solutions.ch</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    -->
+    <script src="assets/jquery/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
