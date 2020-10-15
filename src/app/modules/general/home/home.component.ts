@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     this.features = [
       {
         name: 'Bootstrap prototype',
-        description: 'Bootstrap Prototype , Badges, Buttons, Collapse, Popovers, Toasts, Tooltips',
+        description: 'Bootstrap Prototype , Badges, Buttons, Collapse, Popovers, Toasts, Tooltips, ...',
         icon: 'fab fa-bootstrap',
         link: 'bootstrap-prototype'
       },
