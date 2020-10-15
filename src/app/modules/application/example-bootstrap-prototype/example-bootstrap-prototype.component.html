@@ -1,17 +1,33 @@
-<div class="row justify-content-center">
-  <div class="col-md-12 text-center">
+<div class="row">
+  <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar mb-4 collapse">
+    <div class="sidebar-sticky pt-3">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a routerLink="/bootstrap-prototype" class="nav-link">
+            Bootstrap Features
+          </a>
+        </li>
+        <li *ngFor="let item of items" class="nav-item">
+          <a routerLink="/bootstrap-prototype/{{ item.link }}" class="nav-link">
+            {{ item.name }}
+          </a>
+        </li>
+
+        <!-- Active item -->
+        <!-- TODO:
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            <span data-feather="home"></span>
+            Dashboard <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        -->
+      </ul>
+    </div>
+  </nav>
+
+  <!--<div class="col-md-12">-->
+  <div class="col-md-9 ml-sm-auto col-lg-10 px-md-4 text-center">
     <router-outlet></router-outlet>
   </div>
 </div>
-<!--<div class="row justify-content-center pb-4">
-  <div class="col-md-3 text-center">
-    <div class="list-group">
-      <button *ngFor="let item of features; let i=index" (click)="changeItem(item)" type="button"
-        class="list-group-item list-group-item-action active" [ngClass]="{active : i+1 == current}"
-        routerLink="/bootstrap-prototype/{{ item.link }}">{{ item.name }}</button>
-    </div>
-  </div>
-  <div class="col-md-9 text-center">
-    <router-outlet></router-outlet>
-  </div>
-</div>-->

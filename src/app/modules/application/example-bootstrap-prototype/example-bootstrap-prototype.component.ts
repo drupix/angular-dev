@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ITEMS } from './items';
 
 @Component({
   selector: 'app-example-bootstrap-prototype',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 
 export class ExampleBootstrapPrototypeComponent {
+  items = ITEMS;
 }

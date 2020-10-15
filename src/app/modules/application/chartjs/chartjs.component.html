@@ -1,12 +1,22 @@
-<div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-  <div class="row">
-    <div class="container-fluid">
-      <div class="card p-4">
-        <h5 class="card-title">Chart avec Chart.js</h5>
-        <canvas baseChart [datasets]="datasets" [labels]="labels" [options]="options" [chartType]="type">
-        </canvas>
+<div class="row mb-1">
+  <div class="col-md-12 text-center">
+    <span class="" style="float:left;margin-top:4px;"><a routerLink="/"><i class="fas fa-2x fa-arrow-circle-left"></i></a></span>
+    <h1 class="h2 page-title">Feature : Chart.js&nbsp;&nbsp;<i class="fas fa-chart-bar"></i></h1>
+    <hr>
+  </div>
+</div>
+
+<div class="row pt-4 mb-4 justify-content-center">
+  <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+    <div class="row">
+      <div class="container-fluid">
+        <div class="card p-4">
+          <h5 class="card-title">Chart avec Chart.js</h5>
+          <canvas baseChart [datasets]="datasets" [labels]="labels" [options]="options" [chartType]="type">
+          </canvas>
+        </div>
+        <br/><br/>
       </div>
-      <br/><br/>
     </div>
   </div>
 </div>

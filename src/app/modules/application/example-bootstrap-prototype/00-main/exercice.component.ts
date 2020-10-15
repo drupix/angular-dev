@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ITEMS } from './items';
+import { ITEMS } from '../items';
 
 @Component({
   selector: 'app-prototype',
