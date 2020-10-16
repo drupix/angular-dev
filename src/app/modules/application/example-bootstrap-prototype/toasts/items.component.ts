@@ -14,7 +14,7 @@ export class ToastsComponent implements OnInit {
     this.loadScript('./assets/params/js/toasts.js');
   }
 
-  navigateOnParent() {
+  navigateOnParent(): void {
     this.router.navigate(['/bootstrap-prototype']);
   }
 

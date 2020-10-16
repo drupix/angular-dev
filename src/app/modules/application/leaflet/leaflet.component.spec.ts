@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LeafletComponent } from './leaflet.component';
+import * as L from 'leaflet';
 // import { ChartsModule } from 'ng2-charts';
 
 describe('LeafletComponent', () => {

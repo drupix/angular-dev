@@ -59,6 +59,6 @@ export class LeafletComponent implements OnInit, AfterViewInit {
     const marker = L.marker([this.lat, this.long]);
     marker.addTo(this.map).bindPopup('<h6>AngularDev</h6>by <a target="_blank" href="http://drupal-solutions.ch">drupal-solutions.ch</a>');
 
-    //.openPopup();
+    // .openPopup();
   }
 }

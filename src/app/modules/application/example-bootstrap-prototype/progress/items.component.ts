@@ -13,7 +13,7 @@ export class ProgressComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navigateOnParent() {
+  navigateOnParent(): void {
     this.router.navigate(['/bootstrap-prototype']);
   }
 

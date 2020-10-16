@@ -64,7 +64,7 @@
               </a>
               <div class="collapse" id="collapseBootstrap">
                 <ul class="nav flex-column">
-                  <li *ngFor="let item of bs_items" class="nav-item">
+                  <li *ngFor="let item of bsItems" class="nav-item">
                     <a routerLinkActive="active font-weight-bold" routerLink="/bootstrap-prototype/{{ item.link }}" class="nav-link">
                       {{ item.name }}
                     </a>
@@ -104,6 +104,11 @@
                   <li class="nav-item">
                     <a routerLinkActive="active font-weight-bold" routerLink="/template-driven-forms" class="nav-link">
                       Template-driven Forms
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a routerLinkActive="active font-weight-bold" routerLink="/movies-images-list" class="nav-link">
+                      TODO: Movie list
                     </a>
                   </li>
                   <li class="nav-item">

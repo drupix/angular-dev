@@ -14,7 +14,7 @@ export class TooltipsComponent implements OnInit {
     this.loadScript('./assets/params/js/tooltips.js');
   }
 
-  navigateOnParent() {
+  navigateOnParent(): void {
     this.router.navigate(['/bootstrap-prototype']);
   }
 

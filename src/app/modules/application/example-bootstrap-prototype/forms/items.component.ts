@@ -13,7 +13,7 @@ export class FormsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navigateOnParent() {
+  navigateOnParent(): void {
     this.router.navigate(['/bootstrap-prototype']);
   }
 

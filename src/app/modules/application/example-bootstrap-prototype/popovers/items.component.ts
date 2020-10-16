@@ -14,7 +14,7 @@ export class PopoversComponent implements OnInit {
     this.loadScript('./assets/params/js/popovers.js');
   }
 
-  navigateOnParent() {
+  navigateOnParent(): void {
     this.router.navigate(['/bootstrap-prototype']);
   }
 

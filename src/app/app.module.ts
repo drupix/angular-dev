@@ -20,6 +20,8 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 // import { TemplateDrivenFormsModule } from './modules/application/template-driven-forms/template-driven-forms.module';
 // import { ChartjsComponent } from './modules/application/chartjs/chartjs.component';
 // import { ChartjsModule } from './modules/application/chartjs/chartjs.module';
+// import { MoviesImagesListComponent } from './modules/application/movies-images-list/movies-images-list.component';
+// import { MoviesImagesListModule } from './modules/application/movies-images-list/movies-images-list.module';
 //
 // END Lazy load
 import { AppRoutingModule } from './app-routing.module';
@@ -52,6 +54,7 @@ import { HttpClientModule } from '@angular/common/http';
     // ServicesComponent,
     // TemplateDrivenFormsComponent,
     // ChartjsComponent,
+    // MoviesImagesListComponent,
   ],
   imports: [
     // Transfer State
@@ -70,6 +73,7 @@ import { HttpClientModule } from '@angular/common/http';
     // ServicesModule,
     // TemplateDrivenFormsModule,
     // ChartjsModule,
+    // MoviesImagesListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
