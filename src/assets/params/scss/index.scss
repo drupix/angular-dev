@@ -4,6 +4,7 @@
 // Custom overrides.
 // @import 'mixins';
 @import "typography";
+@import "~leaflet/dist/leaflet.css";
 
 body {
   padding-top: 6rem;
@@ -32,6 +33,12 @@ a {
   a {
     color: #ffffff;
   }
+}
+
+.back-link-wrapper {
+  float:left;
+  margin-top:4px;
+  margin-right: -32px;
 }
 
 .ds-info {

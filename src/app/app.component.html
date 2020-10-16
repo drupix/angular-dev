@@ -1,15 +1,15 @@
 <header>
   <!-- <app-nav></app-nav> -->
   <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: #212121;">
-    <div class="container">
+    <div class="container-fluid">
       <a class="navbar-brand" routerLink="/">
         <img class="logo" src="assets/params/images/logo.png" width="60" alt="">
         <span class="title mr-1">AngularDev</span>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsMain" aria-controls="navbarsMain" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <div class="collapse navbar-collapse" id="navbarsMain">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item active">
             <a class="nav-link" routerLink="/">
@@ -43,8 +43,97 @@
 </header>
 
 <main role="main" class="flex-shrink-0">
-  <div class="container">
-    <router-outlet></router-outlet>
+  <div class="container-fluid">
+    <!--<router-outlet></router-outlet>-->
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar mb-4 collapse">
+        <div class="sidebar-sticky pt-3">
+          <ul class="nav flex-column">
+            <!-- Active item -->
+            <!-- TODO:
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span data-feather="home"></span>
+                Dashboard <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            -->
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-muted" data-toggle="collapse" href="#collapseBootstrap" aria-expanded="false" aria-controls="collapseBootstrap">
+                Bootstrap Features<i class="float-right fas fa-chevron-down"></i>
+              </a>
+              <div class="collapse" id="collapseBootstrap">
+                <ul class="nav flex-column">
+                  <li *ngFor="let item of bs_items" class="nav-item">
+                    <a routerLinkActive="active font-weight-bold" routerLink="/bootstrap-prototype/{{ item.link }}" class="nav-link">
+                      {{ item.name }}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <hr>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-muted" data-toggle="collapse" href="#collapseFeatures" aria-expanded="false" aria-controls="collapseFeatures">
+                Features<i class="float-right fas fa-chevron-down"></i>
+              </a>
+              <div class="collapse" id="collapseFeatures">
+                <ul class="nav flex-column">
+                  <!--
+                  <li *ngFor="let item of bs_items" class="nav-item">
+                    <a routerLinkActive="active font-weight-bold" routerLink="/bootstrap-prototype/{{ item.link }}" class="nav-link">
+                      {{ item.name }}
+                    </a>
+                  </li>
+                  -->
+                  <li class="nav-item">
+                    <a routerLinkActive="active font-weight-bold" routerLink="/components" class="nav-link">
+                      Components
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a routerLinkActive="active font-weight-bold" routerLink="/services" class="nav-link">
+                      Services
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a routerLinkActive="active font-weight-bold" routerLink="/httpclient" class="nav-link">
+                      HttpClient
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a routerLinkActive="active font-weight-bold" routerLink="/template-driven-forms" class="nav-link">
+                      Template-driven Forms
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a routerLinkActive="active font-weight-bold" routerLink="/chartjs" class="nav-link">
+                      Charts
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a routerLinkActive="active font-weight-bold" routerLink="/leaflet" class="nav-link">
+                      Leaflet
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <hr>
+            </li>
+            <li class="nav-item">
+              <a routerLinkActive="active font-weight-bold" routerLink="/reactiveform" class="nav-link">
+                TODO: Reactive Form
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+
   </div>
 </main>
 

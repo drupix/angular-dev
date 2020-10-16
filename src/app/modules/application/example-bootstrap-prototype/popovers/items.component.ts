@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-popovers',
@@ -7,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PopoversComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.loadScript('./assets/params/js/popovers.js');
+  }
+
+  navigateOnParent() {
+    this.router.navigate(['/bootstrap-prototype']);
   }
 
   loadScript(name: string): void {

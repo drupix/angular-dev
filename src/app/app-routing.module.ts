@@ -64,6 +64,11 @@ const routes: Routes = [
     loadChildren: () => import('./modules/application/chartjs/chartjs.module')
       .then(mod => mod.ChartjsModule)
   },
+  {
+    path: 'leaflet',
+    loadChildren: () => import('./modules/application/leaflet/leaflet.module')
+      .then(mod => mod.LeafletModule)
+  },
   { path: '**', component: NotFoundComponent }
 ];
 
