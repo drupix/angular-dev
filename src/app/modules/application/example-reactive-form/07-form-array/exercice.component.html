@@ -1,0 +1,62 @@
+<div class="row mb-1">
+  <div class="text-center col">
+    <span class="back-link-wrapper">
+      <a class="back-link" (click)="navigateOnParent()" role="button"><i class="fas fa-2x fa-chevron-circle-left"></i></a>
+    </span>
+    <h1 class="h2 page-title">Reactive Form: FormArray</h1>
+    <hr>
+  </div>
+</div>
+
+
+<div class="row pt-4 mb-4 justify-content-center">
+  <div class="col-7">
+    <h3 class="text-primary mb-4">FormArray</h3>
+    <form [formGroup]="exampleForm">
+      <div class="form-row">
+        <div class="form-group col-md-9">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" formControlName="name">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="releaseDate">Date</label>
+          <input type="text" class="form-control" id="releaseDate" formControlName="releaseDate">
+        </div>
+      </div>
+      <div class="p-4">
+        <h5 class="text-primary mb-4">Arrays</h5>
+        <div class="form-row">
+          <div formArrayName="characters" style="width:100%;">
+            <button type="submit" (click)="addCharacter()" class="btn btn-primary mr-2">Add</button>
+            <button type="submit" (click)="updateControls()" class="btn btn-primary mr-2">Delete</button>
+            <br/><br/>
+            <table class="table table-sm table-bordered">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let character of characters.controls; let i=index">
+                  <th>{{ i + 1 }}</th>
+                  <td><input type="text" class="form-control" id="{{i}}" [formControlName]="i"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <button type="submit" (click)="resetControls()" class="btn btn-primary mr-2">Reset Controls</button>
+      <button type="submit" (click)="updateControls()" class="btn btn-primary mr-2">Update Controls</button>
+    </form>
+  </div>
+  <div class="col-5">
+    <h3 class="text-primary mb-4">FormArray Result</h3>
+    <strong>Valid</strong> : {{ exampleForm.valid }}<br>
+    <strong>Form Value</strong>
+    <div [innerHTML]="exampleForm.value | prettyjson"></div>
+    <strong>Array Value</strong>
+    <div [innerHTML]="exampleForm.value.characters | prettyjson"></div>
+  </div>
+</div>

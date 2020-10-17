@@ -1,0 +1,41 @@
+<div class="row mb-1">
+  <div class="text-center col">
+    <span class="back-link-wrapper">
+      <a class="back-link" (click)="navigateOnParent()" role="button"><i class="fas fa-2x fa-chevron-circle-left"></i></a>
+    </span>
+    <h1 class="h2 page-title">CRUD: Movies</h1>
+    <hr>
+  </div>
+</div>
+
+
+<div class="row pt-4 mb-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+    <app-search-bar [searchField]="searchField" [itemsCount]="itemsCount" [icon]="icon" [results]="results"
+      [placeholder]="placeholder" (search)="onSearch($event)"></app-search-bar>
+
+    <div class="row" *ngIf="loaded && itemsCount==0">
+      <div class="col">
+        <app-search-result [searchField]="searchField" [found]="found" [creation]="creation" [link]="link">
+        </app-search-result>
+      </div>
+    </div>
+
+    <div class="row" *ngIf="loaded && itemsCount!=0">
+      <div class="col mt-4">
+
+        <app-pagination [count]="itemsCount" [page]="itemsPage" [perPage]="itemsPerPage"
+          (changePage)="onChangePage($event)">
+        </app-pagination>
+
+        <app-grid [items]="items" [columns]="columns" [link]="link"></app-grid>
+
+        <app-pagination [count]="itemsCount" [page]="itemsPage" [perPage]="itemsPerPage"
+          (changePage)="onChangePage($event)">
+        </app-pagination>
+
+      </div>
+    </div>
+  </div>
+</div>

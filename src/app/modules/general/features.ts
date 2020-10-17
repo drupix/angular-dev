@@ -15,7 +15,7 @@ export const FEATURES: any[] =
     {
       name: 'Components',
       description: 'Define and control views - Smartphone Component with Input, Output and Event Emitter',
-      icon: 'fas fa-tools',
+      icon: 'fa fa-tools',
       link: 'components'
     },
     {
@@ -40,12 +40,6 @@ export const FEATURES: any[] =
       link: 'httpclient'
     },
     {
-      name: 'TODO: Reactiveform',
-      description: 'TODO: Create Reactive Form',
-      icon: 'fas fa-comment-alt',
-      link: 'reactiveform'
-    },
-    {
       name: 'Template Driven Form',
       description: 'Create Template Driven Form - Forms are the mainstay of business applications',
       icon: 'fab fa-wpforms',
@@ -64,7 +58,13 @@ export const FEATURES: any[] =
       link: 'leaflet'
     },
     {
-      name: 'TODO: CRUD',
+      name: 'Reactive Form',
+      description: 'Create Reactive Form',
+      icon: 'far fa-file-alt',
+      link: 'reactive-form'
+    },
+    {
+      name: 'CRUD',
       description: 'CRUD: Create, Read, Update, Delete, ...',
       icon: 'fas fa-database',
       link: 'crud'
