@@ -58,77 +58,23 @@
               </a>
             </li>
             -->
-            <li class="nav-item">
-              <a class="nav-link font-weight-bold text-muted" data-toggle="collapse" href="#collapseBootstrap" aria-expanded="false" aria-controls="collapseBootstrap">
-                Bootstrap Features<i class="float-right fas fa-chevron-down"></i>
+            <li *ngFor="let item of items" class="my-1 nav-item">
+              <a class="nav-link font-weight-bold text-muted" data-toggle="collapse" href="#{{ item.link }}-collapse"
+                role="button" aria-expanded="false" aria-current="true"
+                aria-controls="{{ item.link }}-collapse">
+                {{ item.name }}<i class="float-right fas fa-chevron-down"></i>
               </a>
-              <div class="collapse" id="collapseBootstrap">
+              <div class="collapse" id="{{ item.link }}-collapse">
                 <ul class="nav flex-column">
-                  <li *ngFor="let item of bsItems" class="nav-item">
-                    <a routerLinkActive="active font-weight-bold" routerLink="/bootstrap-prototype/{{ item.link }}" class="nav-link">
-                      {{ item.name }}
+                  <li *ngFor="let element of item.elements">
+                    <!--<a (click)="onSelectMenu(element.link)" class="nav-link">-->
+                    <a routerLinkActive="active font-weight-bold" routerLink="/{{ element.link }}" class="nav-link">
+                      {{ element.name }}
                     </a>
                   </li>
                 </ul>
               </div>
               <hr>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-weight-bold text-muted" data-toggle="collapse" href="#collapseFeatures" aria-expanded="false" aria-controls="collapseFeatures">
-                Features<i class="float-right fas fa-chevron-down"></i>
-              </a>
-              <div class="collapse" id="collapseFeatures">
-                <ul class="nav flex-column">
-                  <!--
-                  <li *ngFor="let item of bs_items" class="nav-item">
-                    <a routerLinkActive="active font-weight-bold" routerLink="/bootstrap-prototype/{{ item.link }}" class="nav-link">
-                      {{ item.name }}
-                    </a>
-                  </li>
-                  -->
-                  <li class="nav-item">
-                    <a routerLinkActive="active font-weight-bold" routerLink="/components" class="nav-link">
-                      Components
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a routerLinkActive="active font-weight-bold" routerLink="/services" class="nav-link">
-                      Services
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a routerLinkActive="active font-weight-bold" routerLink="/httpclient" class="nav-link">
-                      HttpClient
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a routerLinkActive="active font-weight-bold" routerLink="/template-driven-forms" class="nav-link">
-                      Template-driven Forms
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a routerLinkActive="active font-weight-bold" routerLink="/movies-images-list" class="nav-link">
-                      TODO: Movie list
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a routerLinkActive="active font-weight-bold" routerLink="/chartjs" class="nav-link">
-                      Charts
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a routerLinkActive="active font-weight-bold" routerLink="/leaflet" class="nav-link">
-                      Leaflet
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <hr>
-            </li>
-            <li class="nav-item">
-              <a routerLinkActive="active font-weight-bold" routerLink="/reactiveform" class="nav-link">
-                TODO: Reactive Form
-              </a>
             </li>
           </ul>
         </div>

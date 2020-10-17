@@ -11,33 +11,28 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 
 const routes: Routes = [
   { path: '', component: HomeComponent, },
-  // { path: 'contact', component: ContactComponent },
-
-  // Lazy load
   {
     path: 'contact',
     loadChildren: () => import('./modules/general/contact/contact.module').then(mod => mod.ContactModule)
   },
   // { path: 'about', component: AboutComponent },
-
-  // Lazy load
   {
     path: 'about',
     loadChildren: () => import('./modules/general/about/about.module').then(mod => mod.AboutModule)
   },
-  // { path: 'signin', component: SigninComponent },
-
-  // Lazy load
   {
     path: 'signin',
     loadChildren: () => import('./modules/general/auth/signin/signin.module').then(mod => mod.SigninModule)
   },
-  // { path: 'signup', component: SignupComponent },
-
   {
     path: 'bootstrap-prototype',
     loadChildren: () => import('./modules/application/example-bootstrap-prototype/example-bootstrap-prototype.module')
       .then(mod => mod.ExampleBootstrapPrototypeModule)
+  },
+  {
+    path: 'typescript',
+    loadChildren: () => import('./modules/application/example-typescript/tutorial.module')
+      .then(mod => mod.TutorialModule)
   },
   {
     path: 'components',
@@ -68,6 +63,11 @@ const routes: Routes = [
     path: 'leaflet',
     loadChildren: () => import('./modules/application/leaflet/leaflet.module')
       .then(mod => mod.LeafletModule)
+  },
+  {
+    path: 'movies-images-list',
+    loadChildren: () => import('./modules/application/movies-images-list/movies-images-list.module')
+      .then(mod => mod.MoviesImagesListModule)
   },
   { path: '**', component: NotFoundComponent }
 ];

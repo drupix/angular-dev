@@ -22,10 +22,16 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 // import { ChartjsModule } from './modules/application/chartjs/chartjs.module';
 // import { MoviesImagesListComponent } from './modules/application/movies-images-list/movies-images-list.component';
 // import { MoviesImagesListModule } from './modules/application/movies-images-list/movies-images-list.module';
+// import { PageListComponent } from './modules/application/movies-images-list/page-list/page-list.component';
+// import { SearchBarComponent } from './modules/application/movies-images-list/search-bar/search-bar.component';
+// import { SearchBarModule } from './modules/application/movies-images-list/search-bar/search-bar.module';
+// import { SearchResultComponent } from './modules/application/movies-images-list/search-result/search-result.component';
+// import { SearchResultModule } from './modules/application/movies-images-list/search-result/search-result.module';
 //
 // END Lazy load
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+
 
 // import { MailingModule } from './modules/general/contact/mailing/mailing.module';
 // import { MailingComponent } from './modules/general/contact/mailing/mailing.component';
@@ -55,6 +61,9 @@ import { HttpClientModule } from '@angular/common/http';
     // TemplateDrivenFormsComponent,
     // ChartjsComponent,
     // MoviesImagesListComponent,
+    // PageListComponent,
+    // SearchBarComponent,
+    // SearchResultComponent,
   ],
   imports: [
     // Transfer State
@@ -73,6 +82,8 @@ import { HttpClientModule } from '@angular/common/http';
     // ServicesModule,
     // TemplateDrivenFormsModule,
     // ChartjsModule,
+    // SearchBarModule,
+    // SearchResultModule,
     // MoviesImagesListModule,
   ],
   providers: [],

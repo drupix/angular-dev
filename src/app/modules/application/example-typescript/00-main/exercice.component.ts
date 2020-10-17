@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BOOTSTRAP_ITEMS } from '../items';
+import { TYPESCRIPT_ITEMS } from '../items';
 
 @Component({
   selector: 'app-prototype',
@@ -7,5 +7,5 @@ import { BOOTSTRAP_ITEMS } from '../items';
   styleUrls: ['./exercice.component.css']
 })
 export class ExerciceComponent {
-  items = BOOTSTRAP_ITEMS;
+  items = TYPESCRIPT_ITEMS;
 }

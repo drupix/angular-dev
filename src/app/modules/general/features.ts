@@ -1,6 +1,12 @@
 export const FEATURES: any[] =
   [
     {
+      name: 'Typescript',
+      description: 'Typescript blabla bla blabla bla...',
+      icon: 'fab fa-js',
+      link: 'typescript'
+    },
+    {
       name: 'Bootstrap prototype',
       description: 'Bootstrap Prototype , Badges, Buttons, Collapse, Popovers, Toasts, Tooltips, ...',
       icon: 'fab fa-bootstrap',
@@ -34,7 +40,7 @@ export const FEATURES: any[] =
       link: 'httpclient'
     },
     {
-      name: 'Reactiveform',
+      name: 'TODO: Reactiveform',
       description: 'TODO: Create Reactive Form',
       icon: 'fas fa-comment-alt',
       link: 'reactiveform'
@@ -51,7 +57,24 @@ export const FEATURES: any[] =
       icon: 'fas fa-chart-bar',
       link: 'chartjs'
     },
-
+    {
+      name: 'Leaflet',
+      description: 'Leaflet blabla bla blabla bla...',
+      icon: 'fas fa-map-marked-alt',
+      link: 'leaflet'
+    },
+    {
+      name: 'TODO: CRUD',
+      description: 'CRUD: Create, Read, Update, Delete, ...',
+      icon: 'fas fa-database',
+      link: 'crud'
+    },
+    {
+      name: 'TODO: Movie list App',
+      description: 'Movie list blabla bla blabla bla...',
+      icon: 'fas fa-film',
+      link: 'movies-images-list'
+    },
     // {
     //   name: 'Directives',
     //   description: 'Change the appearance or behavior of a DOM element',
