@@ -1,0 +1,18 @@
+{
+  "dev": {
+    "application": "angular-dev-backend",
+    "databaseName": "angulardevbackend",
+    "url": "http://localhost:5200/",
+    "login":"postgres",
+    "password":"postgres-dev",
+    "port": 5200
+  },
+  "prod": {
+    "application": "angulardevbackend",
+    "databaseName": "angulardevbackend",
+    "url": "https://www.yourapi.com/",
+    "login":"postgres",
+    "password":"your_password",
+    "port": 5200
+  }
+}

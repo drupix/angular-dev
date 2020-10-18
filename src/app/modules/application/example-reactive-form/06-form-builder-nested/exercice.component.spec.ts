@@ -1,17 +1,19 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { ExerciceComponent } from './exercice.component';
 import { PrettyJsonPipe } from './pretty-json.pipe';
 
-describe('ExerciceComponent', () => {
+describe('ExerciceComponent ReactiveForm 06-form-builder-nested', () => {
   let component: ExerciceComponent;
   let fixture: ComponentFixture<ExerciceComponent>;
 
   beforeEach(async () => {
     TestBed.configureTestingModule({
       imports: [
+        RouterTestingModule,
         ReactiveFormsModule,
         FormsModule,
       ],

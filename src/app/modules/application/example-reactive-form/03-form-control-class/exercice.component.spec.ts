@@ -1,16 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { ExerciceComponent } from './exercice.component';
 
-describe('ExerciceComponent', () => {
+describe('ExerciceComponent ReactiveForm 03-form-control-class', () => {
   let component: ExerciceComponent;
   let fixture: ComponentFixture<ExerciceComponent>;
 
   beforeEach(async () => {
     TestBed.configureTestingModule({
       imports: [
+        RouterTestingModule,
         ReactiveFormsModule,
         FormsModule,
       ],

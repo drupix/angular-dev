@@ -4,7 +4,7 @@ import { SearchResultComponent } from './search-result.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { FormsModule } from '@angular/forms';
 
-describe('SearchResultComponent', () => {
+describe('SearchResultComponent crud', () => {
   let component: SearchResultComponent;
   let fixture: ComponentFixture<SearchResultComponent>;
 

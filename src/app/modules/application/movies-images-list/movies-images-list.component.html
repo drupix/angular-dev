@@ -1,0 +1,33 @@
+<div class="row mb-1">
+  <div class="col-md-12 text-center">
+    <span class="" style="float:left;margin-top:4px;"><a routerLink="/"><i class="fas fa-2x fa-chevron-circle-left"></i></a></span>
+    <h1 class="h2 page-title">Movies list&nbsp;&nbsp;<i class="fas fa-film"></i></h1>
+    <hr>
+  </div>
+</div>
+
+<div class="row pt-4 mb-2 justify-content-center">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <p>API de test par ici :<a target="_blank" rel="noreferrer" href ="./assets/params/json/movies.json"> ./assets/params/json/movies.json</a></p>
+    <app-search-bar [searchField]="searchField" [itemsCount]="itemsCount" [icon]="icon" [results]="results"
+                    [placeholder]="placeholder" (search)="onSearch($event)"></app-search-bar>
+
+    <div class="row" *ngIf="loaded && itemsCount==0">
+      <div class="col">
+        <app-search-result [searchField]="searchField" [found]="found" [creation]="creation" [link]="link">
+        </app-search-result>
+      </div>
+    </div>
+
+    <div class="row" *ngIf="loaded">
+      <div class="col mt-4">
+        <app-pagination [count]="itemsCount" [page]="itemsPage" [perPage]="itemsPerPage"
+            (changePage)="onChangePage($event)">
+        </app-pagination>
+
+        <app-grid-images [items]="items" [columns]="columns" [link]="link"></app-grid-images>
+      </div>
+    </div>
+  </div>
+</div>
+

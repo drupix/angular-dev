@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 import { Renderer2 } from '@angular/core';
 import { BOOTSTRAP_ITEMS } from './modules/application/example-bootstrap-prototype/items';
 import { TYPESCRIPT_ITEMS } from './modules/application/example-typescript/items';
@@ -11,7 +11,7 @@ import { CRUD_ITEMS } from './modules/application/example-crud/items';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'angular-dev';
   // title = 'angular-dev app is running!';
   version = 'Angular version 10.1.6';
@@ -33,11 +33,9 @@ export class AppComponent {
           { name: 'Services', link: 'services' },
           { name: 'HttpClient', link: 'httpclient' },
           { name: 'Template-driven Forms', link: 'template-driven-forms' },
-          { name: 'Charts', link: 'charts' },
+          { name: 'Charts', link: 'chartjs' },
           { name: 'Leaflet', link: 'leaflet' },
-          { name: 'TODO: Movie list', link: 'movies-images-list' },
-
-
+          { name: 'Movie list', link: 'movies-images-list' },
         ]
     },
     {
@@ -53,6 +51,16 @@ export class AppComponent {
   constructor(
     public router: Router,
     public renderer: Renderer2) { }
+
+  ngOnInit(): void {
+    // Scroll to top on Route Change
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
+  }
 
   // onSelectMenu(link: any): void {
   //   const element = document.getElementById('bd-docs-nav');

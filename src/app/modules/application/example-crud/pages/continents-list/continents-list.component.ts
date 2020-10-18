@@ -27,7 +27,7 @@ export class ContinentsListComponent extends PageListComponent {
 
     this.icon = 'fas fa-globe';
     this.itemsCount = 0;
-    this.itemsPerPage = 5;
+    this.itemsPerPage = 12;
 
     this.columns = [
       {

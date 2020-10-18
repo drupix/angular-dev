@@ -5,7 +5,7 @@ import { PageListComponent } from './page-list.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { ConfigService } from '../../services/config/config.service';
 
-describe('PageListComponent', () => {
+describe('PageListComponent crud', () => {
   let component: PageListComponent;
   let fixture: ComponentFixture<PageListComponent>;
 

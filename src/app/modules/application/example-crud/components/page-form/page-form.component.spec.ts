@@ -7,7 +7,7 @@ import { PageFormComponent } from './page-form.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { ConfigService } from '../../services/config/config.service';
 
-describe('PageFormComponent', () => {
+describe('PageFormComponent crud', () => {
   let component: PageFormComponent;
   let fixture: ComponentFixture<PageFormComponent>;
 

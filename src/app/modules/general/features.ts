@@ -70,7 +70,7 @@ export const FEATURES: any[] =
       link: 'crud'
     },
     {
-      name: 'TODO: Movie list App',
+      name: 'Movie list',
       description: 'Movie list blabla bla blabla bla...',
       icon: 'fas fa-film',
       link: 'movies-images-list'
