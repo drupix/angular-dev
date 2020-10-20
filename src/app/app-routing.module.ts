@@ -71,8 +71,8 @@ const routes: Routes = [
   },
   {
     path: 'leaflet',
-    loadChildren: () => import('./modules/application/leaflet/leaflet.module')
-      .then(mod => mod.LeafletModule)
+    loadChildren: () => import('./modules/application/example-leaflet/tutorial.module')
+      .then(mod => mod.TutorialModule)
   },
   {
     path: 'movies-images-list',

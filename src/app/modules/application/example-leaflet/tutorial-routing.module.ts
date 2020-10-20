@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-// Lazy load
-import { LeafletComponent } from './leaflet.component';
+import { TutorialComponent } from './tutorial.component';
 
 const routes: Routes = [
-  { path: '', component: LeafletComponent },
+  {
+    path: '',
+    component: TutorialComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class LeafletRoutingModule { }
+export class TutorialRoutingModule { }
